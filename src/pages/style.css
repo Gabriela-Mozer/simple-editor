@@ -1,9 +1,3 @@
-@import "~normalize.css";
-
-@import "_variables";
-@import "modules/hello.scss";
-
-
 @import url('https://fonts.googleapis.com/css2?family=Palanquin&display=swap');
 html{
     box-sizing:border-box;
