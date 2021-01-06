@@ -12,7 +12,8 @@ html{
   box-sizing: inherit;
   }
 body{
-    background:#B5838D;
+  
+    background: var(--background-color);
     display:flex;
     align-items: center;
     justify-content: center;
@@ -82,5 +83,24 @@ box-sizing: border-box;
 border-radius: 4px;
 background: #121232;
 justify-content: center;
-
+}
+.backgroundColor{
+display: flex;
+width:96px;
+height:42px;
+justify-content:center;
+// margin-top:4px;
+position:absolute;
+left: 50px;
+border: 2px solid #401d57;
+border-radius: 6px;
+background: rgb(29, 50, 51);
+font-family: 'Palanquin', sans-serif;
+font-weight:bold;
+font-size:small;
+color:white;
+padding: 5px;
+}
+:root{
+  --background-color:rgb(181, 131, 141);
 }
