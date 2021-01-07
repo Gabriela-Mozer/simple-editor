@@ -36,5 +36,17 @@ switchModes.addEventListener('click',() => {
         isDark=true;
     }
 });  
-//     localStorage.setItem('entry',entryTextarea.value);
-// });
+
+
+const textarea = document.querySelector('.yourText--js');
+const save = document.querySelector('.button_1--js');
+const load = document.querySelector('.button_2--js');
+
+save.addEventListener('click',(e) => {
+    e.preventDefault();
+    localStorage.setItem('entry', textarea.value);
+})
+load.addEventListener('click',(e) => {
+    e.preventDefault();
+    textarea.value = localStorage.getItem('entry');
+})
