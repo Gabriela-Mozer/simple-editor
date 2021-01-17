@@ -42,6 +42,11 @@ const textarea = document.querySelector('.yourText--js');
 const save = document.querySelector('.button_1--js');
 const load = document.querySelector('.button_2--js');
 
+const currentValue = localStorage.setItem('entry');
+if (currentValue){
+    document.querySelector('.info--js').innerHTML= 'sth'
+}
+
 save.addEventListener('click',(e) => {
     e.preventDefault();
     localStorage.setItem('entry', textarea.value);
@@ -50,3 +55,6 @@ load.addEventListener('click',(e) => {
     e.preventDefault();
     textarea.value = localStorage.getItem('entry');
 })
+
+let something = 6;
+let other = 4;
